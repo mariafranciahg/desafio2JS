@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 2 - Condiciones JS</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li id="p1"><a href="#parte1">Primera parte</a></li>
+            <li id="p2"><a href="#parte2">Segunda parte</a></li>
+            <li id="p3"><a href="#parte3">Tercera parte</a></li>
+            
+        </ul>
+    </nav>
+
+    <main>
+        <section id="parte1">
+            <h1>Condiciones en JS</h1>
+
+            <img id="img" onclick="
+                const img = document.querySelector('#img');
+
+                if (img.style.border === '') {
+                    img.style.border = 'solid red 2px';
+                } else {
+                    img.style.border = '';
+                }
+                " src="./assets/img/js.jpg" alt="js" width="600px">
+        </section>
+
+        <section id="parte2">
+            <h3>Puedes llevar hasta 10 stickers</h3>
+            <div id="cards">
+            <div class="card">
+                <img src="./assets/img/img1.png" alt="github" >
+                <input id="uno" type="number"> 
+            </div>
+            <div class="card">
+                <img src="./assets/img/img2.png" alt="js" >
+                <input id="dos" type="number"> 
+            </div>
+            <div class="card">
+                <img src="./assets/img/img3.png" alt="code" >
+                <input id="tres" type="number"> 
+            </div>
+        </div>
+       
+        <p id="parrafo"></p>
+        
+        <button id="btnvalidar" class="btnvalidar"> VALIDAR </button>
+
+        </section>
+
+        <section id="parte3">
+            <h2>Ingresa el password</h2>
+            <div>
+                <select name="" id="cajaA" class="cajas">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+        
+                <select name="" id="cajaB" class="cajas">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            
+                <select name="" id="cajaC" class="cajas">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+            
+            <button id="btnPass" class="btnvalidar"> INGRESAR </button>
+
+            <p id="parrafoPass"></p>
+        
+        </section>
+
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
